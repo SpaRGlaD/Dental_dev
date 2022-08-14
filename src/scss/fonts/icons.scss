@@ -1,0 +1,81 @@
+%ic {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+[class*="_icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+._icon-facebook:before {
+	content: "\e90e";
+  }
+._icon-arrow-next:before {
+	content: "\e900";
+	color: #099dba;
+  }
+  ._icon-arrow-prev:before {
+	content: "\e901";
+	color: #099dba;
+  }
+  ._icon-Calendar:before {
+	content: "\e902";
+  }
+  ._icon-Clock:before {
+	content: "\e903";
+  }
+  ._icon-Fingerprint:before {
+	content: "\e904";
+  }
+  ._icon-location:before {
+	content: "\e905";
+  }
+  ._icon-play .path1:before {
+	content: "\e906";
+	color: rgb(189, 248, 249);
+  }
+  ._icon-play .path2:before {
+	content: "\e907";
+	margin-left: -1em;
+	color: rgb(51, 217, 218);
+  }
+  ._icon-play .path3:before {
+	content: "\e908";
+	margin-left: -1em;
+	color: rgb(255, 255, 255);
+  }
+  ._icon-play-red .path1:before {
+	content: "\e909";
+	color: rgb(255, 255, 255);
+  }
+  ._icon-play-red .path2:before {
+	content: "\e90a";
+	margin-left: -1em;
+	color: rgb(251, 15, 15);
+  }
+  ._icon-User:before {
+	content: "\e90b";
+  }
+  ._icon-vk .path1:before {
+	content: "\e90c";
+	color: rgb(76, 108, 145);
+  }
+  ._icon-vk .path2:before {
+	content: "\e90d";
+	margin-left: -1em;
+	color: rgb(255, 255, 255);
+  }
+  ._icon-whatsapp:before {
+	content: "\ea93";
+  }
+  ._icon-telegram:before {
+	content: "\ea95";
+  }
+  

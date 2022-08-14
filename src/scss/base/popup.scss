@@ -1,0 +1,288 @@
+body::after {
+	content: "";
+	background-color: rgba(0, 0, 0, 0.8);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 0.8s ease 0s;
+	pointer-events: none;
+	z-index: 149;
+}
+.popup-show body::after {
+	opacity: 1;
+}
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding: 30px 10px;
+	transition: visibility 0.8s ease 0s;
+	visibility: hidden;
+	pointer-events: none;
+}
+.popup_show {
+	z-index: 150;
+	visibility: visible;
+	overflow: auto;
+	pointer-events: auto;
+}
+.popup_show .popup__content {
+	visibility: visible;
+	transform: scale(1);
+}
+.popup__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 100%;
+	flex: 1 1 auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.popup__content {
+	visibility: hidden;
+	transform: scale(0);
+	transition: transform 0.3s ease 0s;
+	background-color: #eee;
+	padding: 20px;
+	width: 100%;
+	max-width: 900px;
+	border-radius: 20px;
+	.lock & {
+		visibility: visible;
+	}
+}
+.enrol {
+	&__popup {
+		.popup__content {
+			max-width: 370px;
+			background: #f3fefe;
+			opacity: 0.9;
+			box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+			border-radius: 20px;
+		}
+	}
+
+	&__popup-close {
+	}
+
+	&__text {
+		font-weight: 500;
+		font-size: 22px;
+		line-height: 120%;
+		text-align: center;
+		color: #474551;
+		max-width: 350px;
+		margin-bottom: 20px;
+		@media (max-width: em(768)) {
+			font-size: 20px;
+		}
+	}
+
+	&__form {
+		// display: block;
+		// max-width: 300px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 20px;
+		input::placeholder {
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 22px;
+			color: #bdf8f9;
+			text-align: center;
+		}
+		input:hover,
+		input:focus {
+			border-color: $accent;
+		}
+	}
+
+	&__input {
+		font-weight: 600;
+
+		outline: none;
+		padding: 10px;
+		width: 300px;
+		height: 40px;
+		background: #ffffff;
+		border: 2px solid #bdf8f9;
+		box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+		border-radius: 30px;
+	}
+
+	&__button {
+	}
+}
+.stock-price {
+	position: relative;
+	&__popup {
+		.popup__content {
+			padding: 60px 30px;
+			max-width: 465px;
+			@media (max-width: em(768)) {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+		.services__footer {
+			margin-top: 30px;
+		}
+	}
+
+	&__close {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		font-size: 30px;
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 28px;
+		line-height: 140%;
+		text-align: center;
+		color: #099dba;
+		margin-bottom: 60px;
+		span {
+			font-weight: 900;
+			color: #474551;
+		}
+		@media (max-width: em(768)) {
+			font-size: 20px;
+		}
+	}
+
+	&__links {
+		text-align: center;
+		.button-2 {
+			background: url("@img/icons/facebook.svg") 13% 50% no-repeat;
+			padding: 8px 82px;
+			@media (max-width: em(768)) {
+				padding-left: 60px;
+				padding-right: 60px;
+			}
+		}
+	}
+	&__link {
+		// display: flex;
+	}
+	&__img {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+}
+.price {
+	&__title {
+		margin-bottom: 22px;
+	}
+	&__link {
+	}
+}
+#popup-price {
+	.price__link {
+		display: block;
+		padding: 8px 128px;
+		margin: 0 auto;
+		@media (max-width: em(768)) {
+			padding: 8px 90px;
+		}
+	}
+}
+//========================================================================================================================================================
+.youtube {
+	&__popup {
+		.popup__content {
+			padding: 90px 130px;
+			@include adaptiveValue("padding-top", 90, 20);
+			@include adaptiveValue("padding-bottom", 90, 20);
+			@include adaptiveValue("padding-left", 130, 20);
+			@include adaptiveValue("padding-right", 130, 20);
+			max-width: 1284px;
+			// max-height: 750px;
+			@include adaptiveValue("height", 750, 200);
+		}
+		.popup__youtube {
+			height: 100%;
+		}
+		iframe {
+			height: 100%;
+			width: 100%;
+		}
+	}
+}
+//========================================================================================================================================================
+.therapy__popup {
+}
+#popup-therapy {
+	.popup__content {
+		max-width: 100%;
+	}
+}
+.quiz {
+	.quiz-slider {
+		height: 1440px;
+	}
+	.stock-price {
+		&__close {
+		}
+	}
+
+	&__container {
+	}
+
+	&__top {
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: 36px;
+		line-height: 44px;
+		color: #099dba;
+		margin-bottom: 10px;
+	}
+
+	&__name {
+		font-weight: 700;
+		font-size: 36px;
+
+		margin-bottom: 60px;
+	}
+
+	&__choice {
+		font-weight: 700;
+		font-size: 24px;
+		margin-bottom: 60px;
+	}
+
+	&__content {
+		// display: flex;
+		// flex-wrap: wrap;
+	}
+
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__bottom-link {
+		font-size: 28px;
+	}
+	.slide-doctors__item {
+		width: 630px;
+		height: 690px;
+	}
+	.doctors-main__slide {
+		width: 630px !important;
+	}
+}

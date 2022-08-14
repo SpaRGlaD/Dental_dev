@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Стоматологическая клиника"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			@@include('html/_main.htm',{})
+			@@include('html/_consultation.htm',{})
+			@@include('html/_stock.htm',{})
+			@@include('html/_services.htm',{})
+			@@include('html/_info.htm',{})
+			
+			@@include('html/_doctors-test.htm',{})
+			<section class="assistant">
+				<div class="assistant__container">
+					<h2 class="assistant__title">
+						Выбрав, интересующую вас услугу, <span>наш электронный помощник</span>, поможет вам быстро
+						подобрать нужного специалиста
+					</h2>
+					<div class="assistant__content">
+						<div class="assistant__item">
+							<a class="assistant__link" href="">
+								<div class="assistant__name">Хирургия</div>
+								<div class="assistant__image"><img src="@img/service/01.png" alt="картинка"></div>
+							</a>
+						</div>
+						<div class="assistant__item">
+							<a class="assistant__link" href=""data-popup="#popup-therapy">
+								<div  class="assistant__name">Терапия</div>
+								<div class="assistant__image"><img src="@img/service/02.png" alt="картинка"></div>
+							</a>
+						</div>
+						<div class="assistant__item">
+							<a class="assistant__link" href="">
+								<div class="assistant__name">Ортопедия</div>
+								<div class="assistant__image"><img src="@img/service/03.png" alt="картинка"></div>
+							</a>
+						</div>
+						<div class="assistant__item">
+							<a class="assistant__link" href="">
+								<div class="assistant__name">Имплантация</div>
+								<div class="assistant__image"><img src="@img/service/04.png" alt="картинка"></div>
+							</a>
+						</div>
+						<div class="assistant__item">
+							<a class="assistant__link" href="">
+								<div class="assistant__name">Ортодонтия</div>
+								<div class="assistant__image"><img src="@img/service/05.png" alt="картинка"></div>
+							</a>
+						</div>
+						<div class="assistant__item">
+							<a class="assistant__link" href="">
+								<div class="assistant__name">Отбеливание</div>
+								<div class="assistant__image"><img src="@img/service/06.png" alt="картинка"></div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section class="recall" id="recall">
+				<div class="recall__container">
+					<h2 class="recall__title title">Отзывы</h2>
+					<h3 class="recall__subtitle subtitle">Нашу клинику за годы работы посетили сотни пациентов. Всегда
+						рады видеть довольных клиентов. Ваша улыбка - это наша работа!
+					</h3>
+					<div class="recall__slider swiper">
+						<div class="recall__wrapper swiper-wrapper">
+							<div class="recall__slide swiper-slide">
+								<div class="recall__item">
+									<div class="recall__item-top">
+										<div class="recall__img">
+											<img src="@img/recall/01.png" alt="фото">
+										</div>
+										<div class="recall__info">
+											<div class="recall__name">Юрьева Оксана</div>
+											<div class="recall__text">Клиника чистая, уютная. Персонал улыбчивый,
+												вежливый, услужливый. Всегда объяснят если что не понятно несколько раз,
+												с таким персоналом приятно общаться. Мне уделили довольно много времени,
+												всё подробно рассказали и проконсультировали.
+											</div>
+										</div>
+									</div>
+									<div class="recall__item-bottom">
+										<div class="recall__date">12.02.2020</div>
+									</div>
+								</div>
+							</div>
+							<div class="recall__slide swiper-slide">
+								<div class="recall__item">
+									<div class="recall__item-top">
+										<div class="recall__img">
+											<img src="@img/recall/02.png" alt="фото">
+										</div>
+										<div class="recall__info">
+											<div class="recall__name">Викина Вика</div>
+											<div class="recall__text">Хочу сказать огромное СПАСИБО врачам и персоналу
+												Стоматологии Семейный Доктор. Я ваш вечный клиент и главное
+												эксклюзивный.
+												Очень рада что мы познакомились. СПАСИБО!
+											</div>
+										</div>
+									</div>
+									<div class="recall__item-bottom">
+										<div class="recall__date">12.02.2020</div>
+									</div>
+								</div>
+							</div>
+							<div class="recall__slide swiper-slide">
+								<div class="recall__item">
+									<div class="recall__item-top">
+										<div class="recall__img">
+											<img src="@img/recall/01.png" alt="фото">
+										</div>
+										<div class="recall__info">
+											<div class="recall__name">Юрьева Оксана</div>
+											<div class="recall__text">Клиника чистая, уютная. Персонал улыбчивый,
+												вежливый, услужливый. Всегда объяснят если что не понятно несколько раз,
+												с таким персоналом приятно общаться. Мне уделили довольно много времени,
+												всё подробно рассказали и проконсультировали.
+											</div>
+										</div>
+									</div>
+									<div class="recall__item-bottom">
+										<div class="recall__date">12.02.2020</div>
+									</div>
+								</div>
+							</div>
+							<div class="recall__slide swiper-slide">
+								<div class="recall__item">
+									<div class="recall__item-top">
+										<div class="recall__img">
+											<img src="@img/recall/02.png" alt="фото">
+										</div>
+										<div class="recall__info">
+											<div class="recall__name">Викина Вика</div>
+											<div class="recall__text">Хочу сказать огромное СПАСИБО врачам и персоналу
+												Стоматологии Семейный Доктор. Я ваш вечный клиент и главное
+												эксклюзивный.
+												Очень рада что мы познакомились. СПАСИБО!
+											</div>
+										</div>
+									</div>
+									<div class="recall__item-bottom">
+										<div class="recall__date">12.02.2020</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+					<div class="recall__link">
+						<a href=""><img src="@img/icons/facebook.svg" alt="facebook">Оставить отзыв</a>
+					</div>
+					<button type="button" class="swiper-button-prev _icon-arrow-prev slide-arrow"></button>
+					<button type="button" class="swiper-button-next _icon-arrow-next slide-arrow"></button>
+				</div>
+			</section>
+			
+			<section class="license" id="license">
+				<div class="license__container">
+					<h2 class="license__title title">Лицензии и награды</h2>
+					<h3 class="license__subtitle subtitle">
+						Деятельность клиники сертифицирована, мы имеем все необходимые лицензии и разрешающие документы.
+					</h3>
+					<div class="license__slider swiper">
+						<div class="license__wrapper swiper-wrapper">
+							<div class="license__slide swiper-slide">
+								<div class="license__image"><img src="@img/lisence/01.jpg" alt="скан документа"></div>
+							</div>
+							<div class="license__slide swiper-slide">
+								<div class="license__image"><img src="@img/lisence/02.jpg" alt="скан документа"></div>
+							</div>
+							<div class="license__slide swiper-slide">
+								<div class="license__image"><img src="@img/lisence/03.jpg" alt="скан документа"></div>
+							</div>
+							<div class="license__slide swiper-slide">
+								<div class="license__image"><img src="@img/lisence/04.jpg" alt="скан документа"></div>
+							</div>
+							<div class="license__slide swiper-slide">
+								<div class="license__image"><img src="@img/lisence/01.jpg" alt="скан документа"></div>
+							</div>
+							<div class="license__slide swiper-slide">
+								<div class="license__image"><img src="@img/lisence/02.jpg" alt="скан документа"></div>
+							</div>
+							<div class="license__slide swiper-slide">
+								<div class="license__image"><img src="@img/lisence/03.jpg" alt="скан документа"></div>
+							</div>
+							<div class="license__slide swiper-slide">
+								<div class="license__image"><img src="@img/lisence/04.jpg" alt="скан документа"></div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+						<button type="button" class="swiper-button-prev _icon-arrow-prev slide-arrow"></button>
+						<button type="button" class="swiper-button-next _icon-arrow-next slide-arrow"></button>
+					</div>
+				</div>
+			</section>
+			
+			<section class="about" id="about">
+				<div class="about__container">
+					<h2 class="about__title title">О клинике</h2>
+					<h3 class="about__subtitle subtitle">
+						Вы получите качественное лечение на современном оборудовании по приемлимым ценам
+					</h3>
+					<div class="about__top">
+						<div class="about__top-text">
+							<div class="about__text">Философия клиники Ваша здоровая улыбка – наша работа. В стенах
+								нашей
+								стоматологической клиники Вы всегда можете рассчитывать на профессиональное оказание
+								услуг в
+								кратчайшие сроки.
+							</div>
+							<ul class="about__list">
+								<li class="about__item">Современное оборудование, профессионализм врачей, опыт, а
+									главное –
+									внимательное отношение к пациенту.
+								</li>
+								<li class="about__item">Главное направление – оказание качественной стоматологической
+									помощи
+									(детская стоматология, терапевтическое лечение, хирургическое лечение,
+									имплантология,
+									ортодонтическое лечение, ортопедия).
+								</li>
+								<li class="about__item">Каждый месяц у нас проходят акции и специальные предложения</li>
+							</ul>
+						</div>
+						<div class="about__top-bg">
+							<img src="@img/about/bg.jpg" alt="">
+						</div>
+					</div>
+					<div class="about__slider swiper">
+						<div class="about__wrapper swiper-wrapper">
+							<div class="about__slide swiper-slide">
+								<div class="about__image">
+									<img src="@img/about/slider/01.jpg" alt="фотография стоматологии">
+								</div>
+							</div>
+							<div class="about__slide swiper-slide">
+								<div class="about__image">
+									<img src="@img/about/slider/02.jpg" alt="фотография стоматологии">
+								</div>
+							</div>
+							<div class="about__slide swiper-slide">
+								<div class="about__image">
+									<img src="@img/about/slider/03.jpg" alt="фотография стоматологии">
+								</div>
+							</div>
+							<div class="about__slide swiper-slide">
+								<div class="about__image">
+									<img src="@img/about/slider/04.jpg" alt="фотография стоматологии">
+								</div>
+							</div>
+							<div class="about__slide swiper-slide">
+								<div class="about__image">
+									<img src="@img/about/slider/01.jpg" alt="фотография стоматологии">
+								</div>
+							</div>
+							<div class="about__slide swiper-slide">
+								<div class="about__image">
+									<img src="@img/about/slider/02.jpg" alt="фотография стоматологии">
+								</div>
+							</div>
+							<div class="about__slide swiper-slide">
+								<div class="about__image">
+									<img src="@img/about/slider/03.jpg" alt="фотография стоматологии">
+								</div>
+							</div>
+							<div class="about__slide swiper-slide">
+								<div class="about__image">
+									<img src="@img/about/slider/04.jpg" alt="фотография стоматологии">
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+						<button type="button" class="swiper-button-prev _icon-arrow-prev slide-arrow"></button>
+						<button type="button" class="swiper-button-next _icon-arrow-next slide-arrow"></button>
+					</div>
+				</div>
+			</section>
+			
+			<section class="enrol">
+				<div class="enrol__container">
+					<div class="enrol__content">
+						<div class="enrol__title">Запишитесь на бесплатную первичную консультацию и диагностику зубов
+						</div>
+						<div class="enrol__subtitle">
+							В ходе консультации вы получите <br> 2-3 плана качественного лечения под ваш бюджет
+						</div>
+						<form class="enrol__form form" action="">
+							<label for="">
+								<input data-validate autocomplete="off" type="text" name="form[]"
+									data-error="Введите имя" placeholder="Имя" class="enrol__input">
+							</label>
+							<label for="">
+								<input data-validate autocomplete="off" type="number" name="form[]"
+									data-error="Введите номер телефона" placeholder="Телефон" class="enrol__input">
+							</label>
+							<button data-close type="submit" class="enrol__button button">Записаться</button>
+						</form>
+					</div>
+				</div>
+			</section>
+			
+			<section class="contacts" id="contacts">
+				<div class="contacts__container">
+					<div class="contacts__content">
+						<h2 class="contacts__title title">Контакты</h2>
+						<div class="contacts__adress">г. Черкассы, ул. Грушевского д. 161</div>
+						<a class="contacts__link" href="https://www.google.com.ua/maps/search/%D1%87%D0%B5%D1%80%D0%BA%D0%B0%D1%81%D1%81%D1%8B+%D1%81%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F/@49.432682,32.0336891,14z/data=!3m1!4b1?hl=ru" target="_blank">Проложить маршрут</a>
+						<div class="contacts__schedule">с 9:00 до 21:00<span>последняя запись до 19:00</span></div>
+						<ul class="contacts__phones-list">
+							<li>+8 (097) 614-15-15 </li>
+							<li>+8 (066) 025-57-67</li>
+							<li>+8 (098) 025-55-66</li>
+						</ul>
+						<div class="services__social" data-da=".menu__body, 450">
+							<div class="services__social_icons">
+								<a class="services__link" href="#"><img src="@img/icons/telegram.svg" alt="telegram">
+								</a>
+								<a class="services__link" href="#"><img src="@img/icons/whatsup.svg" alt="whatsup"> </a>
+							</div>
+							<div class="services__social_txt">спросить в мессенджере</div>
+						</div>
+						<div class="contacts__social">
+							<a class="contacts__link-social" href="https://www.facebook.com/"><img src="@img/icons/facebook.svg" alt="facebook">
+								Наша круппа в Facebook
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
